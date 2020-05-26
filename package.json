@@ -4,6 +4,7 @@
   "description": "Boilerplate for Electron apps backed by an express API with a React frontend",
   "main": "main.js",
   "scripts": {
+    "init": "git config core.hooksPath .githooks",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
