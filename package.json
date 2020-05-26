@@ -30,7 +30,9 @@
     "eslint-plugin-react": "^7.20.0",
     "nodemon": "^2.0.4",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.5"
+    "postcss-modules": "^2.0.0",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.5"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -45,6 +47,6 @@
       "dist",
       ".cache"
     ],
-    "ext": "js, jsx"
+    "ext": "js, jsx, scss, html"
   }
 }
