@@ -6,8 +6,9 @@
   "scripts": {
     "init": "nvm use && git config core.hooksPath .githooks",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm -rf dist/ && parcel build src/index.html -d dist --public-url $(pwd)/dist --no-minify && electron main.js",
-    "start:dev-tools": "OPEN_DEV_TOOLS=1 npm start"
+    "start": "nodemon --exec 'npm run build && electron main.js'",
+    "start:dev-tools": "nodemon --exec 'OPEN_DEV_TOOLS=1 npm start'",
+    "build": "rm -rf dist/ && parcel build src/index.html -d dist --public-url $(pwd)/dist --no-minify"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.0",
+    "nodemon": "^2.0.4",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.5"
   },
@@ -37,5 +39,12 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "dist",
+      ".cache"
+    ],
+    "ext": "js, jsx"
   }
 }
