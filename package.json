@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "init": "nvm use && git config core.hooksPath .githooks",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx jest src",
     "start": "nodemon --exec 'npm run build && electron main.js'",
     "start:dev-tools": "nodemon --exec 'OPEN_DEV_TOOLS=1 npm start'",
     "build": "rm -rf dist/ && parcel build src/index.html -d dist --public-url $(pwd)/dist --no-minify"
@@ -25,12 +25,15 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "electron": "^9.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
     "nodemon": "^2.0.4",
     "parcel-bundler": "^1.12.4",
-    "postcss-modules": "^2.0.0",
     "prettier": "^2.0.5",
     "sass": "^1.26.5"
   },
