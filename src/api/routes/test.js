@@ -5,5 +5,5 @@ module.exports = {
   path: paths.test,
   allowedHttpMethods: ['get'],
   handler: testController.test,
-  params: []
+  requiredParams: []
 }

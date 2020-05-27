@@ -19,7 +19,7 @@ routes.initialise = (apiRouter, callback) => {
         allowedHttpMethods.forEach((httpMethod) => {
           apiRouter[httpMethod](routeConfig.path, (req, res) => {
             routeConfig.handler(req, (err, result) => {
-              if (err) return res.status(500).json({ err })
+              if (err) return res.status(500).json({ error: err })
               return res.status(200).json(result)
             })
           })
