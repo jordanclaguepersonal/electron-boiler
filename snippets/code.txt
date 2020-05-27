@@ -1,0 +1,12 @@
+import React from 'react'
+import styles from './${componentNameUpperCamel}.scss'
+
+const ${componentNameUpperCamel} = () => {
+  return (
+    <h1 className={styles.${componentNameCamel}}>
+      ${componentName}
+    </h1>
+  )
+}
+
+export default ${componentNameUpperCamel}

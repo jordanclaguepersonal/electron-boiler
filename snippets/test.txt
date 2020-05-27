@@ -1,0 +1,10 @@
+import React from 'react'
+import { shallow } from 'enzyme'
+import ${componentNameUpperCamel} from './${componentNameUpperCamel}'
+
+describe('<${componentNameUpperCamel}/>', () => {
+  it('renders', () => {
+    const wrapper = shallow(<${componentNameUpperCamel} />)
+    expect(wrapper.find('h1').length).toBe(1)
+  })
+})
