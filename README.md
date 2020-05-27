@@ -1,6 +1,6 @@
-# Electron Boilerplate
+# Electron Boiler
 
-Boilerplate for a simple Electron app, backed with a Node.js API with a React frontend.
+This project is the boilerplate for a simple Electron app, backed with a Node.js API with a React frontend.
 
 ## Getting Started and Prerequisites
 Ensure that [NVM is installed](https://github.com/nvm-sh/nvm#installing-and-updating) and run:
@@ -10,17 +10,17 @@ npm install
 ```
 
 ## Overview
-A lot of past personal projects have begun with spitting out the same boilerplate time and time again. This repository is a starting point, from which I can pick up a functioning Electron app with the following:
+A lot of projects begin with the same boilerplate time and time again. This repository is a starting point, from which you can pick up a functioning Electron app with the following:
 
 - React and Redux with component-scoped styles (see ["Extending the Frontend"](#extending-the-frontend))
-- Node.js & Express.js (see "[Extending the API](#extending-the-api)")
+- Node.js & Express.js API (see "[Extending the API](#extending-the-api)")
 - ESLint (linting staged files on pre-commit hook)
 - Prettier (auto formatting code on pre-commit hook)
 - Jest & Enzyme
 
 ## Scripts
 
-- **`npm init`:** Ensure that the correct Node version is being used and configure Git hooks directory
+- **`npm init`:** Ensure that the correct Node version is being used and configure Git config to update the githook directory
 - **`npm test`:** Use Jest to test any Javascript files that match [the default](https://jestjs.io/docs/en/configuration#testregex-string--arraystring). *Note: Files that match /test.[jt]sx?$/" will not be tested. The default has been overridden in jest.config.js to ensure that controllers/test.js does not fail*
 - **`npm start`:** Bundle the React application with Parcel, start the API (accessible on localhost:3000) and display in an Electron window
 - **`npm start:dev-tools`:** The same as `npm start`, but with dev tools open be default
